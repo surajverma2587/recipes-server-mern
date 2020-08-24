@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
 const db = require("./models");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 const DB_URI = process.env.MONGODB_URI || "mongodb://localhost/recipes";
 
 const mongooseOptions = {
