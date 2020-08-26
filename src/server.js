@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const db = require("./models");
 
@@ -23,6 +24,8 @@ app.use(
     extended: true,
   })
 );
+
+app.use(cors());
 
 mongoose.connect(DB_URI, mongooseOptions);
 
